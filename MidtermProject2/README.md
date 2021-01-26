@@ -13,7 +13,7 @@ In this part of midterm project, you are going to implement the **mining** modul
 The following files are related to this assignment.
 - *src/miner.rs* - where the mining process takes place.
 - *src/api/mod.rs* - an API with which you can interact with your program when it is running.
-- Updated: *src/main.rs* - the main function of the program. In this part, you need to read and change the code that creates a miner.
+- *src/main.rs* - the main function of the program. In this part, you need to read and change the code that creates a miner.
 
 To see how the code in these files works, you can run `cargo run -- -vv` and you will see these logs in the terminal
 > Miner initialized into paused mode
@@ -48,7 +48,7 @@ Hence, in this part, you only need to add blockchain into miner **Context** stru
 2. Add `Arc<Mutex<Blockchain>>` to the definition of miner **Context** struct.
 3. Add `blockchain: &Arc<Mutex<Blockchain>>` to the argument of *new()* function. Inside *new()* function, use `Arc::clone(block)` to get a clone and pass it to **Context**.
 
-Updated: At last, you need to go to *src/main.rs*, and change the code related to `miner::new`. You need to first create a new **Blockchain**, then turn it into `Arc<Mutex<Blockchain>>`, then pass it into function `miner::new`.
+At last, you need to go to *src/main.rs*, and change the code related to `miner::new`. You need to first create a new **Blockchain**, then turn it into `Arc<Mutex<Blockchain>>`, then pass it into function `miner::new`.
 
 
 ### Main mining loop
