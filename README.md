@@ -21,7 +21,7 @@ You need to run the project on your machines. **We strongly recommend Linux or M
 - [Part 3](MidtermProject3). Due date 5:00PM, Mar 4, 2021.
 - [Part 4](MidtermProject4). Due date 5:00PM, Mar 11, 2021.
 - [Part 5](MidtermProject5). No submission required.
-- [Part 6](MidtermProject6). Due date 5:00PM, Apr 1, 2021. 
+- [Part 6](MidtermProject6). Due date 5:00PM, Mar 25, 2021. 
 
 ## Final Project
 - Team formation. Please form teams of 4. Combination of two teams from midterm project is recommended. 
