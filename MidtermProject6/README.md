@@ -2,7 +2,7 @@
 
 This is the last part of midterm project, and you are going to finish the Bitcoin client. You need to maintain a state for the ledger that the blockchain creates and add all the necessary checks related to it. 
 
-**Due date: 5:00PM, Apr 1, 2021. Please submit a report on Compass2g and record a demo video.**
+**Due date: 5:00PM, Mar 25, 2021. Please submit a report on Compass2g and record a demo video.**
 
 ## Programming
 
