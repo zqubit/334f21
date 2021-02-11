@@ -2,7 +2,7 @@
 
 For midterm project, you are going to build a simplified Bitcoin client. The goal of the client is not to run in Bitcoin mainnet or any public testnet. Instead, the goal is to run it inside your team and let you have fun with it. You have plenty of freedom of designing and implementing this project.
 
-The midterm project should be based on your code of warmup 2. You are free to discuss warmup 2 or merge codes of teammates after its due. 
+The midterm project should be based on your code of warmup 2. You are free to discuss warmup 2 or merge codes of teammates after it is due. 
 
 This is the first part of midterm project. You are going to finish the **Block** struct and the **Blockchain** struct. Please work in teams of 2.
 
@@ -14,7 +14,7 @@ This is the first part of midterm project. You are going to finish the **Block**
 2. Students can run tests (by command `cargo test`) provided in the code to check the validity of their implementation. However, passing these tests doesn't guarantee getting full grades. 
 3. After finishing this part, before submitting your code, please remove your tests if you write any. Please leave `mod tests` at its original code, and this is for TAs to conveniently do the grading.
 4. After step 3, please push to your gitlab repo, and click `Download' on gitlab to download a zip file.
-5. Rename it to your netids as `netid1-netid2.zip`. Upload the zip file on compass2g. Please check your file size and it should be less than 1MB or 2MB.
+5. Rename it to your netids as `netid1-netid2.zip`. Upload the zip file on compass2g. Please check your file size and it should be less than 1MB or 2MB. One submission for one team is enough.
 6. TAs will put additional tests (private) on the submission and run them to award marks.
 
 ## Code provided
