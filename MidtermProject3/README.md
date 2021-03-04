@@ -2,7 +2,7 @@
 
 In this part of midterm project, you are going to implement the **network** module of Bitcoin client. The network module is in charge of communicating with other nodes/clients. It forms the peer-to-peer (p2p) network and uses gossip protocol to exchange data, including blocks and transactions. (Transactions will not be covered in this part.)
 
-**Due date: 5:00PM, Mar 4, 2021.**
+**Due date: ~~5:00PM, Mar 4, 2021~~ 11:59PM, Mar 7, 2021.**
 
 ## Repository management and submission
 
