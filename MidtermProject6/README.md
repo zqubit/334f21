@@ -65,9 +65,8 @@ The final grading of the project will be based on demo video and the project rep
 ### Report
 You need to submit a report that contains the following information.
 1. Name and Netid of the team members
-2. URL of demo video
-3. Design document
-4. How you split your work
+2. Design document
+3. How you split your work
 
 The design document is a short description of your codebase and the various design choices you made to ensure that your codebase is resiliant to various attacks like double spending attacks. It is recommended to include a simple design diagram to indicate the interactions between various modules of your codebase.
 
