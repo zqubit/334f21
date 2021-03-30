@@ -35,9 +35,7 @@ This is a project for teams of two. The grading will be based on the project rep
 ### Report
 You need to submit a report that contains the following information.
 1. Name and Netid of the team members
-
-For the two attacks, respectively:
-2. Description of the implementation of attacks
+2. Description of the implementation of the two attacks
 3. Briefly description of your experiment setting and steps
 4. Results of: attack time (private attack) and chain quality (selfish mining) under different values of $\beta$. For chain quality, also compare your simulation results with the number in the notes of lecture 7
 5. How you split your work
