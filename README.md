@@ -24,8 +24,8 @@ You need to run the project on your machines. **We strongly recommend Linux or M
 - [Part 6](MidtermProject6). Due date 5:00PM, Mar 25, 2021. 
 
 ## Final Project
-- Team formation. Please form teams of 4. Combination of two teams from midterm project is recommended. 
-- List of projects. Coming soon.
+- Team formation. You can keep the same team as in the midterm project.
+- [MP 1](FinalProject_MachineProblem1). Due date 5:00PM, Apr 15, 2021.
 
 ## Policy
 Submissions later than due date will get 0 points.
