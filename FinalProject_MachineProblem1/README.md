@@ -1,6 +1,8 @@
 # Final Project Machine Problem 1
 In this MP, you are going to implement private attack and selfish mining based on your midterm project codebase, respectively. Do experiments about the two attacks and finish a report.
 
+**Due date: 5:00PM, Apr 15, 2021.**
+
 ## Recall: Private attack
 
 In private attack, we assume there is a single adversarial user. The adversarial user is trying to re-write the last *k* blocks, that is, break the *k*-common prefix property. To do so, it must create a private fork of length equal to or longer than the honest longest chain. Notice that the adversary must also wait until the honest chain is long enough (>=*k*) to reveal its private chain. Please refer lecture 6 for more on private attack. 
