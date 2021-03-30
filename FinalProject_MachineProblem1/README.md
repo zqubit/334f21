@@ -17,7 +17,7 @@ In selfish mining, we assume there is a single adversarial user. The adversarial
 
 The easiest way to experiment the attacks is to run one honest node (longest-chain node) and one adversarial node on your local machine. The network delay would be very small, though. So you can imagine this is simulating the attack under zero delay (e.g., this setting is analyzed in lecture 6).
 
-You can simulate different fractions of adversarial hash power $\beta$ by changing the parameter *lambda* in miner's API. 
+You can simulate different fractions of adversarial hash power *beta* by changing the parameter *lambda* in miner's API. 
 
 For simplicity, you can also change the honest node implementation such that they break ties in the favor of adversarial blocks.
 
@@ -37,7 +37,7 @@ You need to submit a report that contains the following information.
 1. Name and Netid of the team members
 2. Description of the implementation of the two attacks
 3. Briefly description of your experiment setting and steps
-4. Results of: attack time (private attack) and chain quality (selfish mining) under different values of $\beta$. For chain quality, also compare your simulation results with the number in the notes of lecture 7
+4. Results of: attack time (private attack) and chain quality (selfish mining) under different values of *beta*. For chain quality, also compare your simulation results with the number in the notes of lecture 7
 5. How you split your work
 
 **Please limit the report within two pages.**
