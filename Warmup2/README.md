@@ -1,4 +1,7 @@
 # Warmup 2
+
+Due 11 PM, October 5, 2021
+
 In this assignment, you will implement some crypto-primitives and basic data structures. You will need the code that we provide in this repo. Please follow the instructions.
 
 **Notice that this is an individual assignment. You should finish it on your own.**
