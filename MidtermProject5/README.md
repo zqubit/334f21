@@ -2,8 +2,6 @@
 
 This part of the Midterm project will deal with including transactions in the codebase. Integrate the transaction structure inside the block content, add network functionality to transaction propagation and adding a transaction mempool to be used by the miner to include transaction content in the block being mined.
 
-**Due date: 5:00PM, March 18, 2021. (Target due date, no submision required.)**
-
 ## Repository management and submission
 
 1. We suggest you to continue to work on your repo of midterm project. 
