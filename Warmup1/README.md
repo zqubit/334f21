@@ -69,6 +69,6 @@ This assignment has some basic Rust programming tasks. Each task is closely rela
 - The goal of steps 7, 8, 9 is to let you know how to encode any object into bytes. In network socket communcation, the messages are first encoded, then transmitted, and at last decoded at the receiver. In your  Bitcoin client, structs such as Block or Transaction need to be encoded and decoded.
 
 ### Submission
-All you need to submit is the output of command `cargo run` on Compass2g. You don't need to submit codes.
+All you need to submit is the output of command `cargo run` on Canvas. You don't need to submit codes.
 
 Run command `cargo run` in terminal for your project and copy the output on the screen. An example of output is in the [previous paragraph](#output).
