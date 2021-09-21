@@ -1,5 +1,7 @@
 # Midterm Project, Part 1
 
+Due 11 PM, October 12, 2021
+
 For midterm project, you are going to build a simplified Bitcoin client. The goal of the client is not to run in Bitcoin mainnet or any public testnet. Instead, the goal is to run it inside your team and let you have fun with it. You have plenty of freedom of designing and implementing this project.
 
 The midterm project should be based on your code of warmup 2. You are free to discuss warmup 2 or merge codes of teammates after it is due. 
