@@ -1,6 +1,6 @@
-# Principles of Blockchains
+# ELEC_ENG/COMP_ENG 334: Fundamentals of Blockchains and Decentralization
 
-Welcome! This is the repository for ELEC_ENG/COMP_ENG 334: Fundamentals of Blockchains and Decentralization, Fall 2021 at Northwestern University, Evanston, IL.
+Welcome! This is the repository for required projects of the above course.
 
 ## Project Suggestion
 You need to run the project on your machines. **We strongly recommend Linux or Mac OS.** On Windows, some package referred by the project has bugs, and we recommend Ubuntu subsystem on Windows.
@@ -22,3 +22,6 @@ You need to run the project on your machines. **We strongly recommend Linux or M
 
 ## Policy
 Submissions later than due date will get 0 points.
+
+## Acknowledgement
+We thank Professor Pramod Viswanath and Xuechao Wang for developing these course projects and for sharing their repository.
