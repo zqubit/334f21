@@ -2,8 +2,6 @@
 
 In this part of midterm project, you are going to implement the **mining** module of Bitcoin client. The mining module, or miner, will produce blocks that solve proof-of-work puzzle.
 
-**Due date: 5:00PM, Feb 25, 2020.**
-
 ## Repository management and submission
 
 1. We suggest you to continue to work on your repo of midterm project. 
