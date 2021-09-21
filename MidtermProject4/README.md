@@ -2,8 +2,6 @@
 
 In this part of the midterm project, we will be combine last 3 week's work to make a functioning data blockchain. Most of this week's work will be combining mining, network and blockchain module. You will need to add PoW validation and a block buffer to handle orphan blocks.
 
-**Due date: 5:00PM, March 11, 2021.**
-
 ## Repository management and submission
 
 1. We suggest you to continue to work on your repo of midterm project. 
