@@ -70,5 +70,3 @@ This assignment has some basic Rust programming tasks. Each task is closely rela
 All you need to submit is the output of command `cargo run` on Compass2g. You don't need to submit codes.
 
 Run command `cargo run` in terminal for your project and copy the output on the screen. An example of output is in the [previous paragraph](#output).
-
-Due date 5:00PM, Feb 4, 2021.
