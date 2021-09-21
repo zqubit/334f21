@@ -1,5 +1,7 @@
 # Warmup 1
 
+Due 11 PM, September 28, 2021
+
 Hi, welcome! This is your first assignment of this course. The goal of this assignment is to let you get familiar with the **Rust** programming language. We will use Rust throughout this course so it is a good idea to start to learn it as early as possible.
 
 ## Introduction
