@@ -6,8 +6,6 @@ The midterm project should be based on your code of warmup 2. You are free to di
 
 This is the first part of midterm project. You are going to finish the **Block** struct and the **Blockchain** struct. Please work in teams of 2.
 
-**Due date: 5:00PM, Feb 18, 2021.** 
-
 ## Repository management and submission
 
 1. We suggest you to continue to work on your repo of warmup 2. Team members should work on one same repo.
