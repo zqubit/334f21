@@ -7,11 +7,11 @@ In this assignment, you will implement some crypto-primitives and basic data str
 **Notice that this is an individual assignment. You should finish it on your own.**
 
 ## Repository management and submission:
-1. Fork the current repo. **Change visibility to private, if you don't want someone see your code.** Note: We are also going to use the same repo for midterm project, which means you don't need to fork this repo again in the future.
+1. Fork this public repo (https://github.com/zqubit/334f21.git) as a *private* repo to avoid your code being seen by others. **We recommend you refer to [this post](https://medium.com/@bilalbayasut/github-how-to-make-a-fork-of-public-repository-private-6ee8cacaf9d3) when creating your private repo.** Note: We are also going to use the same repo for midterm project, which means you don't need to fork this repo again in the future.
 2. Students can run tests (by command `cargo test`) provided in the code to check the validity of their implementation. However, passing these tests doesn't guarantee getting full grades. 
 3. After finishing this warmup, before submitting your code, please remove your tests if you write any. Please leave `mod tests` at its original code, and this is for TAs to conveniently do the grading.
-4. After step 3, please push to your gitlab repo, and click `Download' on gitlab to download a zip file.
-5. Rename it to your netid as `netid.zip`. Upload the zip file on compass2g. Please check your file size and it should be less than 1MB or 2MB.
+4. After step 3, please push to your private github repo, and click `Code` -> `Download ZIP` from the repo's webpage to download a zip file.
+5. Rename it to your netid as `netid.zip`. Upload the zip file on Canvas. Please check your file size and it should be less than 1MB or 2MB.
 6. TAs will put additional tests (private) on the submission and run them to award marks.
 
 ## Code provided
