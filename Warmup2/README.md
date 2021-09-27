@@ -21,8 +21,8 @@ We have provided incomplete code for implementing some crypto-primitives and dat
 
 You don't need to write anything in the above two files.
 
-3. _src/crypto/merkle.rs_ - struct defition of **MerkleTree** struct and the related function declaration
-4. _src/transaction.rs_ - struct defition of **Transaction** struct and function declaration for __sign()__ and __verify()__ .
+3. _src/crypto/merkle.rs_ - struct definition of **MerkleTree** struct and the related function declaration
+4. _src/transaction.rs_ - struct definition of **Transaction** struct and function declaration for __sign()__ and __verify()__ .
 
 You will write your code in the above two files.
 
