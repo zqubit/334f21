@@ -35,7 +35,11 @@ running X tests
 test XXX ... FAILED
 test XXX ... FAILED
 ```
-It's expected that tests fail with the code we provide. After you finish this assignment, some of the tests will pass.
+It's expected that tests fail with the code we provide. After you finish this assignment, some of the tests will pass (specifically, the 4 tests below should pass):
+- `crypto::merkle::tests::proof`
+- `crypto::merkle::tests::root`
+- `crypto::merkle::tests::verifying`
+- `transaction::tests::sign_verify`
 
 You need to implement the missing parts in the code. They include the following.
 
