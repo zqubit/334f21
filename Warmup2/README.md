@@ -62,12 +62,25 @@ This part is in file *src/crypto/merkle.rs*. You need to complete the merkle tre
 3. *proof()* - given a merkle tree, and also given the index, this function returns the proof in the form of a vector of hashes.
 4. *verify()* - given a root, a hash of datum, a proof (a vector of hashes), an index of that datum (same index in *proof()* function), and a leaf_size (the length of leaves/data in *new()* function), returns whether the proof is correct.
 
+*We have also provided some **starter code** in Warmup2/merkle.rs*, where the `new()` function is implemented except two helper functions `hash_children` and `duplicate_last_node`. You will probably like to refer to the starter code if you are unfamiliar with Rust, but it is up to you whether to adopt the starter code or not.
+
 We provide some small test functions in this file and you can run `cargo test`. In these test functions, we also provide a brief explanation about the expected computation.
 
 *new()* function can take any Hashable data, but for simpilicity we will test merkle tree over **H256**, whose Hashable trait is already provided inside *src/crypto/hash.rs*.
 
 A tricky part about *new()* is when the input length is not a power of 2, you will need some more steps to create the merkle tree as follows.
 > Whenever a level of the tree has odd number of nodes, duplicate the last node to make the number even.
+
+## Implementation Hints
+**It is highly recommended that you use an IDE when programming on this project.** Typing and ownership management in Rust can be tricky, and an IDE is helpful in detecting problems and providing suggestions while you code, especially as the code size grows.
+ 
+Implementation hints on `transaction.rs`:
+- For this assignment, you can define the struct `Transaction` arbitrarily as long as it's non-empty. The content in that struct does not matter.
+ 
+Implementation hints on `crypto/merkle.rs`:
+- There are more than one ways to implement a Merkle tree. For example:
+  1. The most intuitive way is to implement it as a recursive binary tree. In Rust, both the left subtree and the right subtree of a tree (of type `T`) should have a wrapped type like `Option<Box<T>>`. Here, `Box` is required because the subtrees are dynamically sized, and `Option` is needed because the subtrees can be empty. (We have provided some starter code for this method: see `merkle.rs`.)
+  2. Binary trees can also be implemented using non-recursive data structures, for example using an array (refer to https://en.wikipedia.org/wiki/Binary_tree#Arrays). In Rust, `Vec<T>` is an array of changeable size containing elements of type `T`.
 
 ## Advance Notice
 - At the end of the midterm project, you will implement a functional cryptocurrency client. We don't require you have a functional transaction struct in this assignment, but please start to think what transaction struct should be. Also please start to think about UTXO since it is closely related to transaction.
