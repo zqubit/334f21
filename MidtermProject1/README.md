@@ -13,7 +13,7 @@ This is the first part of midterm project. You are going to finish the **Block**
 1. We suggest you to continue to work on your repo of warmup 2. Team members should work on one same repo.
 2. Students can run tests (by command `cargo test`) provided in the code to check the validity of their implementation. However, passing these tests doesn't guarantee getting full grades. 
 3. After finishing this part, before submitting your code, please remove your tests if you write any. Please leave `mod tests` at its original code, and this is for TAs to conveniently do the grading.
-4. After step 3, please push to your github repo, and click `Code`->`Download ZIP' on github to download a zip file.
+4. After step 3, please push to your github repo, and click `Code`->`Download ZIP` on github to download a zip file.
 5. Rename it to your netids as `netid1-netid2.zip`. Upload the zip file on Canvas. Please check your file size and it should be less than 1MB or 2MB. One submission for one team is enough.
 6. TAs will put additional tests (private) on the submission and run them to award marks.
 
