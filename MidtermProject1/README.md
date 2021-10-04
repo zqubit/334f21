@@ -41,15 +41,15 @@ We suggest (but not require) you to create a struct **Content** to include the c
 
 Notice that to create the Merkle root of **Transaction**, you need to implement trait **Hashable** for **Transaction**. The way to implement that trait is first serialize it into bytes, then call SHA256 to hash the bytes.
 
-You need to implement trait **Hashable** for **Block**. They way to hash a block is to hash **Header** rather than **Content**. So you can first implement **Hashable** for **Header**. When you hash a **Block**, you can directly call the hash function of **Header**.
+You need to implement trait **Hashable** for **Block**. They way to hash a block is to hash **Header** rather than **Content**. So you can first implement **Hashable** for **Header** (Similarly, first serialize it into bytes, then call SHA256 to hash the bytes). When you hash a **Block**, you can directly call the hash function of **Header**.
 
-To test and debug, you need to finish the function *generate_random_block*. This function takes an argument named *parent*. The generated block should contain that *parent*. And the *nonce* should be a random integer. As for content, you can simply let it be empty. So merkle\_root should be the Merkle root of an empty input. As for fields such as difficulty and timestamp, choose whatever you like.
+To test and debug, you need to finish the function *generate_random_block*. This function takes an argument named *parent*. The generated block should contain that *parent*. And the *nonce* should be a random integer. As for content, you can simply create some arbitrary transaction(s), e.g. `let transactions: Vec<Transaction> = vec![Default::default()];`. Then, use the **MerkleTree** struct to calculate the Merkle root of these transactions. As for fields such as difficulty and timestamp, choose whatever you like.
 
 ### Blockchain
 
 You need to finish a struct named **Blockchain**, which contains the necessary information of a direct acyclic graph (DAG) and provides functions related to the longest chain rule. The following functions are required:
-1. new() - create a new blockchain that only contains the information of the genesis block. (Define genesis block by your self.)
-2. insert() - insert a block into the blockchain.
+1. new() - create a new blockchain that only contains the information of the genesis block. (Define genesis block by yourself. For this assignment, you can define it arbitrarily; the header and the content of the genesis block does not matter.)
+2. insert() - insert a block into the blockchain. (For this assignment, you can assume the block always has a valid parent.)
 3. tip() - return the last block's hash in the longest chain.
 4. all_blocks_in_longest_chain() - return all blocks' hashes, from the genesis to the tip. This function will not be tested in this part, and will be used in debugging in the future.
 
