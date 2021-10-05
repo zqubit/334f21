@@ -2,11 +2,13 @@
 
 Due 11 PM, October 12, 2021
 
-For midterm project, you are going to build a simplified Bitcoin client. The goal of the client is not to run in Bitcoin mainnet or any public testnet. Instead, the goal is to run it inside your team and let you have fun with it. You have plenty of freedom of designing and implementing this project.
+You may form a team of 2 with another student in this class for the remainder tasks of this midterm project. You do not have to form a team. If you do at some point, you must work as a team through the end of Part 6.  A team of two should submit a single solution in the following manner: One submits the entire solution that includes both names; the other submits only the name of the other teammate (both must make a submission by the deadline).
+
+Through this midterm project, you are going to build a simplified Bitcoin client. The goal of the client is not to run in Bitcoin mainnet or any public testnet. Instead, the goal is to run it inside your team and let you have fun with it. You have plenty of freedom of designing and implementing this project.
 
 The midterm project should be based on your code of warmup 2. You are free to discuss warmup 2 or merge codes of teammates after it is due. 
 
-This is the first part of midterm project. You are going to finish the **Block** struct and the **Blockchain** struct. Please work in teams of 2.
+This is the first part of midterm project. You are going to finish the **Block** struct and the **Blockchain** struct.
 
 ## Repository management and submission
 
