@@ -2,7 +2,7 @@
 
 Due 11 PM, October 12, 2021
 
-You may form a team of 2 with another student in this class for this and subsequent parts of this midterm project. You do not have to form a team. If you do at any point, you must work as a team through the end of Part 6.  A team of two should submit a single solution in the following manner: One submits the entire solution that includes both names; the other submits only the name of the other teammate (both must make a submission by the deadline).  Consider to use Piazza to look for a teammate.
+You may form a team of 2 with another student in this class for this and subsequent parts of this midterm project. You do not have to form a team. If you do at any point, you must work as a team through the end of Part 6.  A team of two should submit a single solution.  Consider to use Piazza to look for a teammate.  A group set 'miners' has been created on Canvas.  If you have a teammate, the two of you should be able to form a group on Canvas.
 
 Through this midterm project, you are going to build a simplified Bitcoin client. The goal of the client is not to run in Bitcoin mainnet or any public testnet. Instead, the goal is to run it inside your team and let you have fun with it. You have plenty of freedom of designing and implementing this project.
 
