@@ -3,6 +3,12 @@
 Welcome! This is the repository for required projects of the above course.
 
 ## Project Suggestion
+You should create your own *private* repo to avoid your code being seen by others. **We recommend you refer to [this post](https://medium.com/@bilalbayasut/github-how-to-make-a-fork-of-public-repository-private-6ee8cacaf9d3) when creating your private repo.** If you wish to pull the latest updates from this public repo, you can run the following:
+```
+$ git remote add public https://github.com/zqubit/334f21.git
+$ git pull public master
+```
+
 You need to run the project on your machines. **We strongly recommend Linux or Mac OS.** On Windows, some package referred by the project has bugs, and we recommend Ubuntu subsystem on Windows.
 
 **We also strongly recommend you install a proper IDE** to make coding in Rust easier. Below are some good choices:
