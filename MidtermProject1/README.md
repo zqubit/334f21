@@ -1,6 +1,6 @@
 # Midterm Project, Part 1
 
-Due 11 PM, October 12, 2021
+Due 11 PM, October 14, 2021
 
 You may form a team of 2 with another student in this class for this and subsequent parts of this midterm project. You do not have to form a team. If you do at any point, you must work as a team through the end of Part 6.  A team of two should submit a single solution.  Consider to use Piazza to look for a teammate.  A group set 'miners' has been created on Canvas.  If you have a teammate, the two of you should be able to form a group on Canvas.
 
