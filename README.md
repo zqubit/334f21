@@ -18,8 +18,8 @@ You need to run the project on your machines. **We strongly recommend Linux or M
 
 ## Warmup Project
 
-- [Warmup 1](Warmup1). Due 11 PM, September 28, 2021.
-- [Warmup 2](Warmup2). Due 11 PM, October 5, 2021.
+- [Warmup 1](Warmup1).
+- [Warmup 2](Warmup2). -- [Solution Page](https://github.com/zqubit/334f21/tree/Warmup2-solution)
 
 ## Midterm Project
 
