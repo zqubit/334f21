@@ -46,7 +46,7 @@ Specifically, the miner needs the following,
 Hence, in this part, you only need to add blockchain into miner **Context** struct. It is running in another thread (cf. `thread::Builder::new` in line 67), hence we need the thread safe wrapper of blockchain. Please follow these steps,
 1. Read the document of [Arc](https://doc.rust-lang.org/std/sync/struct.Arc.html) and [Mutex](https://doc.rust-lang.org/std/sync/struct.Mutex.html) in std crate of Rust.
 2. Add `Arc<Mutex<Blockchain>>` to the definition of miner **Context** struct.
-3. Add `blockchain: &Arc<Mutex<Blockchain>>` to the argument of *new()* function. Inside *new()* function, use `Arc::clone(block)` to get a clone and pass it to **Context**.
+3. Add `blockchain: &Arc<Mutex<Blockchain>>` to the argument of *new()* function. Inside *new()* function, use `Arc::clone(blockchain)` to get a clone and pass it to **Context**.
 
 At last, you need to go to *src/main.rs*, and change the code related to `miner::new`. You need to first create a new **Blockchain**, then turn it into `Arc<Mutex<Blockchain>>`, then pass it into function `miner::new`.
 
