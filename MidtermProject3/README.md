@@ -7,7 +7,7 @@ In this part of midterm project, you are going to implement the **network** modu
 ## Repository management and submission
 
 1. We suggest you to continue to work on your repo of midterm project. 
-2. Submit a report in pdf on Compass2g. Please don't submit code. One submission for one team is enough.
+2. Submit a report in pdf on Canvas. Please don't submit code. One submission for one team is enough.
 
 ## Code provided
 The following files are related to this assignment.
