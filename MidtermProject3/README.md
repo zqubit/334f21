@@ -78,7 +78,7 @@ Note: remember to start the program **in release version**, which runs much fast
 
 ## Report
 
-Please submit a report in pdf. Please use double spacing between paragraphs and use 16 pt font size. Also please keep it within one page.
+Please submit a report in pdf. Please use double spacing between paragraphs and use 11 pt font size. Also please keep it within one page.
 
 Firstly, the report should have both teammate's name and netid. Then you need to write the following paragraphs.
 
