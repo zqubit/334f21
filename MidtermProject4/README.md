@@ -7,7 +7,7 @@ In this part of the midterm project, we will be combine last 3 week's work to ma
 ## Repository management and submission
 
 1. We suggest you to continue to work on your repo of midterm project. 
-2. Submit a report in pdf on Compass2g. Please don't submit code. One submission for one team is enough.
+2. Submit a report in pdf on Canvas. Please don't submit code. One submission for one team is enough.
 
 ## Code provided
 No additional code will be provided for this assignment since the work is mostly related to adding compatibility across modules.
@@ -40,7 +40,7 @@ Check if the new processed block is a parent to any block in the orphan buffer, 
 
 ## Experiment
 
-After you finish the programming, you will have a working data blockchain. We call this blockchain a data blockchain since we are not adding any meaningful transactions or transaction validation at this stage yet. If you like, you can put data into transactions, who will be carried by blocks and be on-chain eventaully.
+After you finish the programming, you will have a working data blockchain. We call this blockchain a data blockchain since we are not adding any meaningful transactions or transaction validation at this stage yet. If you like, you can put data into transactions, who will be carried by blocks and be on-chain eventually.
 
 Before the experiment, please make sure the *timestamp* field in your block reflects the real time when this block is created.
 
