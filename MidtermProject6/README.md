@@ -40,7 +40,7 @@ You can do initial coin offering (ICO) by inserting entries into **State** struc
 #### State per block
 Since there is branching/forking in the blockchain, and the longest chain may change, you need to store one copy of **State** for each block. A copy of **State** for a block refers to the state after executing the block. We recommend using a HashMap-like storage, e.g., `HashMap<block hash, state>`. When you check transactions, you can get the corresponding state from it. When you update state, you do the update on a new state copy, and insert it.
 
-Another way to deal with forking is to implement a reverse state transition corresponding to a transction, say that the longest chain changes from A->B->C->D to A->B->E->F->G, you can perform reverse state transition on blocks D and C and a forward state transition from blocks E, F, G. You may use diagrams on page 9 and 13 on lecture slides as a reference(these diagrams are not comprehensive and may miss some functionalities depending on your implementation).
+Another way to deal with forking is to implement a reverse state transition corresponding to a transction, say that the longest chain changes from A->B->C->D to A->B->E->F->G, you can perform reverse state transition on blocks D and C and a forward state transition from blocks E, F, G.
 
 #### Note
 
@@ -60,7 +60,7 @@ We do not ask you to implement transaction fees and mining rewards and the corre
 Now that you finish the last part, you have a simplified Bitcoin client! With transaction generator simulating user's transactions, the system should run smoothly and securely.
 
 ## Submission
-The final grading of the project will be based on demo video and the project report.
+The final grading of the project will be based on your demo and your project report.
 
 ### Report
 You need to submit a report that contains the following information.
@@ -74,5 +74,4 @@ The design document is a short description of your codebase and the various desi
 
 ### Demo
 
-You will demo the running codebase in the video. The demo will consists of running the codebase on 3 nodes in the same machine and checking the status at every node. Run the experiments at different mining rates and different transactoin generation rates respectively. The details of the demo will be released in Piazza soon.
-
+You need to submit a two-minute video that demonstrates the execution of your code. For the demo you need to run your code on 3 nodes on the same computer and display the status at each node. Run the experiments at a suitable mining rate and a suitable transaction generation rate so that the video demonstrates the growth of the blockchains at the three nodes. Your video should be at a reasonable pace for the graders to follow without using slow motion. At the same time your video should provide enough information for the grader to judge what requirements you have completed.
