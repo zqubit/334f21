@@ -60,7 +60,7 @@ We do not ask you to implement transaction fees and mining rewards and the corre
 Now that you finish the last part, you have a simplified Bitcoin client! With transaction generator simulating user's transactions, the system should run smoothly and securely.
 
 ## Submission
-The final grading of the project will be based on your demo and your project report.
+The final grading of the project will be based on your project report and demo video.
 
 ### Report
 You need to submit a report that contains the following information.
@@ -74,4 +74,4 @@ The design document is a short description of your codebase and the various desi
 
 ### Demo
 
-You need to submit a two-minute video that demonstrates the execution of your code. For the demo you need to run your code on 3 nodes on the same computer and display the status at each node. Run the experiments at a suitable mining rate and a suitable transaction generation rate so that the video demonstrates the growth of the blockchains at the three nodes. Your video should be at a reasonable pace for the graders to follow without using slow motion. At the same time your video should provide enough information for the grader to judge what requirements you have completed.
+You need to submit a two-minute video that demonstrates the execution of your code. (For example, if you use a Mac, using Screenshot in the QuickTime Player app, you can make a video recording of your computer screen.) For the demo you need to run your code on 3 nodes on the same computer and display the status at each node. Run the experiments at a suitable mining rate and a suitable transaction generation rate so that the video demonstrates the growth of the blockchains at the three nodes. Your video should be at a reasonable pace for the graders to follow without using slow motion. At the same time your video should provide enough information for the grader to judge what requirements you have completed.
