@@ -2,7 +2,7 @@
 
 This is the last part of midterm project, and you are going to finish the Bitcoin client. You need to maintain a state for the ledger that the blockchain creates and add all the necessary checks related to it. 
 
-** Due 11 PM, December 2, 2021.  Submit a report on Canvas. One submission for one team is enough. Remember to include both author names if you are a team of two. **
+** Submit a report on Canvas. One submission for one team is enough. Remember to include both author names if you are a team of two. **
 
 ## Programming
 
