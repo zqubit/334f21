@@ -1,3 +1,5 @@
+Until the assignment is posted on Canvas, this description is subject to change.
+
 # Warmup 2
 
 In this assignment, you will implement some crypto-primitives and basic data structures. You will need the code that we provide in this repo. Please follow the instructions.
