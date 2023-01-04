@@ -1,7 +1,5 @@
 # Midterm Project, Part 5
 
-No submission.  Recommended finish date: November 24, 2021.
-
 This part of the Midterm project will deal with including transactions in the codebase. Integrate the transaction structure inside the block content, add network functionality to transaction propagation and adding a transaction mempool to be used by the miner to include transaction content in the block being mined.
 
 ## Repository management and submission
