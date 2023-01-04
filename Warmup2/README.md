@@ -1,17 +1,15 @@
 # Warmup 2
 
-Due 11 PM, October 5, 2021
-
 In this assignment, you will implement some crypto-primitives and basic data structures. You will need the code that we provide in this repo. Please follow the instructions.
 
 **Notice that this is an individual assignment. You should finish it on your own.**
 
 ## Repository management and submission:
-1. Fork this public repo (https://github.com/zqubit/334f21.git) as a *private* repo to avoid your code being seen by others. **We recommend you refer to [this post](https://medium.com/@bilalbayasut/github-how-to-make-a-fork-of-public-repository-private-6ee8cacaf9d3) when creating your private repo.** Note: We are also going to use the same repo for midterm project, which means you don't need to fork this repo again in the future.
+1. Fork this public repo (https://github.com/zqubit/334f21.git) as a *private* repo to avoid your code being seen by others.  **We recommend you refer to [this post](https://medium.com/@bilalbayasut/github-how-to-make-a-fork-of-public-repository-private-6ee8cacaf9d3) when creating your private repo.**  WE WILL TAKE POINTS OFF IF YOU DO NOT KEEP YOUR REPO PRIVATE.  When in doubt, double check with the teaching assistants.  Note: We are also going to use the same repo for subsequent tasks, which means you don't need to fork this repo again in the future.
 2. Students can run tests (by command `cargo test`) provided in the code to check the validity of their implementation. However, passing these tests doesn't guarantee getting full grades. 
 3. After finishing this warmup, before submitting your code, please remove your tests if you write any. Please leave `mod tests` at its original code, and this is for TAs to conveniently do the grading.
 4. After step 3, please push to your private github repo, and click `Code` -> `Download ZIP` from the repo's webpage to download a zip file.
-5. Rename it to your netid as `netid.zip`. Upload the zip file on Canvas. Please check your file size and it should be less than 1MB or 2MB.
+5. Rename it to your netid as `netid.zip`. Upload the zip file on Canvas. Please check your file size and it should be less than 1 MB or 2 MB.
 6. TAs will put additional tests (private) on the submission and run them to award marks.
 
 ## Code provided
@@ -26,7 +24,7 @@ You don't need to write anything in the above two files.
 
 You will write your code in the above two files.
 
-As for other files in the repo, you don't have to worry about them in this assignment. They may appear in future assignments/projects.
+As for other files in the repo, you don't have to worry about them in this assignment. They may appear in future assignments.
 
 ## Programming
 After you fork this repo, the first thing we suggest is to run command `cargo test` to see whether the code is compiling on your machine. (If compiling has error, please check the version of cargo to be the latest stable.) If the compiling is successful, you will see something like this:
@@ -83,5 +81,5 @@ Implementation hints on `crypto/merkle.rs`:
   2. Binary trees can also be implemented using non-recursive data structures, for example using an array (refer to https://en.wikipedia.org/wiki/Binary_tree#Arrays). In Rust, `Vec<T>` is an array of changeable size containing elements of type `T`.
 
 ## Advance Notice
-- At the end of the midterm project, you will implement a functional cryptocurrency client. We don't require you have a functional transaction struct in this assignment, but please start to think what transaction struct should be. Also please start to think about UTXO since it is closely related to transaction.
+- At the end of this entire project, you will implement a functional cryptocurrency client. We don't require you have a functional transaction struct in this assignment, but please start to think what transaction struct should be. Also please start to think about UTXO since it is closely related to transaction.
 - This code base provides other files that will help you build a blockchain client. If you want to run the main program and see what is going on, you can run `cargo run -- -vv`. Currently the main program just stucks at a loop.
