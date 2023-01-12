@@ -83,7 +83,7 @@ Implementation hints on `crypto/merkle.rs`:
 - There are more than one ways to implement a Merkle tree. For example:
   1. The most intuitive way is to implement it as a recursive binary tree. In Rust, both the left subtree and the right subtree of a tree (of type `T`) should have a wrapped type like `Option<Box<T>>`. Here, `Box` is required because the subtrees are dynamically sized, and `Option` is needed because the subtrees can be empty. (We have provided some starter code for this method: see `merkle.rs`.)
   2. Binary trees can also be implemented using non-recursive data structures, for example using an array (refer to https://en.wikipedia.org/wiki/Binary_tree#Arrays). In Rust, `Vec<T>` is an array of changeable size containing elements of type `T`.
-- Use the function `ring::digest::digest` with the SHA256 algorithm to calculate the hashes. To convert the resulting hash (of type `Digest`) into the type `H256`, the simpliest way is to call ...`.into()`.
+- Recall that we can use the function `ring::digest::digest` with the SHA256 algorithm to calculate the hash of an arbitrary byte slice. To convert the resulting hash (of type `Digest`) into the type `H256`, the simpliest way is to call ...`.into()`.
 
 ## Advance Notice
 - At the end of this entire project, you will implement a functional cryptocurrency client. We don't require you have a functional transaction struct in this assignment, but please start to think what transaction struct should be. Also please start to think about UTXO since it is closely related to transaction.
