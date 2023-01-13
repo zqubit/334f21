@@ -2,6 +2,13 @@
 
 In this part of midterm project, you are going to implement the **mining** module of Bitcoin client. The mining module, or miner, will produce blocks that solve proof-of-work puzzle.
 
+## Special Notifications
+
+One of the dependencies (namely, `net2`) had a bug until version `0.2.36`. This bug may lead to TCP port binding failures, which would show the following error message in the terminal when you run `cargo run`:
+> `ERROR - P2P server error: Invalid argument (os error 22)`
+
+To prevent the above error, make sure your `Cargo.toml` is up to date ([see the latest file here](https://github.com/zqubit/334f21/blob/master/Cargo.toml#L24)). This ensures that you have the working version of `net2`.
+
 ## Repository management and submission
 
 1. We suggest you to continue to work on your repo of midterm project. 
