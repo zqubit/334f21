@@ -18,6 +18,8 @@ The code we provide for midterm project is the same as warmup 2. The following f
 1. *src/block.rs* - We have provided some referential code [here](https://github.com/zqubit/334f21/blob/master/MidtermProject1/block.rs). If you decide to base your work on the referential code, please read the file above to get familiar with the struct **Block** and fill up the function `default_difficulty()`. You may also opt to design and implement the **Block** struct in your own way.
 2. *src/blockchain.rs* - Please finish **Blockchain** struct and some functions related to it in this file. In [this file](https://github.com/zqubit/334f21/blob/master/MidtermProject1/blockchain.rs), we have provided some hints and a couple of extra test cases. Also, it is your freedom to work on, partially adapt, or ignore the referential code above.
 
+If you base your work on the referential code, be sure to copy the code into corresponding files in `src/`.
+
 ## Programming
 
 ### Block
@@ -34,13 +36,13 @@ The above fields are also known as **Header**.
 6. data/content - the actual transactions carried by this block. It just contains a **Vec** of **Transaction**. Transaction struct is the one you wrote in previous assignment.
 
 The referential code has also provided the following functionalities that you can readily use:
-- Notice that to create the Merkle root of **Transaction**, we have provided the trait **Hashable** for **Transaction**. The way to implement that trait is first serialize it into bytes, then call SHA256 to hash the bytes. We have provided the corresponding code snippet inside the double-slash comments.
+- Notice that to create the Merkle root of **Transaction**, we need the trait **Hashable** for **Transaction**. The way to implement that trait is first serialize it into bytes, then call SHA256 to hash the bytes. We have provided the corresponding code snippet inside the double-slash comments.
 - We have also provided the trait **Hashable** for **Block**. The way to hash a block is to hash **Header** rather than **Content**. We first implement **Hashable** for **Header** (Similarly, first serialize it into bytes, then call SHA256 to hash the bytes). When we hash a **Block**, we directly call the hash function of **Header**.
 - To help test and debug, we have provided the function *generate_random_block*. This function takes an argument named *parent*. The generated block should contain that *parent*. And the *nonce* should be a random integer. As for content, we simply create some arbitrary transaction(s), e.g. `let transactions: Vec<Transaction> = vec![Default::default()];`. Then, we use the **MerkleTree** struct to calculate the Merkle root of these transactions. The fields such as difficulty and timestamp were arbitrarily chosen since they are unimportant in this part.
 
 ### Blockchain
 
-You need to finish a struct named **Blockchain**, which contains the necessary information of a direct acyclic graph (DAG) and provides functions related to the longest chain rule. The following functions are required:
+You need to finish a struct named **Blockchain**, which contains the necessary information of a direct acyclic graph (DAG) (in fact, _a tree_ of blocks, in this project) and provides functions related to the longest chain rule. The following functions are required:
 1. new() - create a new blockchain that only contains the information of the genesis block. (Define genesis block by yourself. For this assignment, you can define it arbitrarily; the header and the content of the genesis block does not matter.)
 2. insert() - insert a block into the blockchain. (For this assignment, you can assume the block always has a valid parent.)
 3. tip() - return the last block's hash in the longest chain.
@@ -58,7 +60,7 @@ You may worry that the client will run out of memory. You can implement with per
 
 ## Grading
 
-If your programming is working, you will pass the test named *insert_one*. (By running `cargo test`.)
+If your programming is working, you will pass the test named *insert_one* and other ones in the referential code (By running `cargo test`.)
 
 We will use other private tests to grade your submission.
 The tests will insert several blocks into a new blockchain, and check whether the tip is correct. The tests contain forking/branching scenarios to check the correctness of your longest chain rule.
