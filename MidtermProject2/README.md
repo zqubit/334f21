@@ -12,7 +12,7 @@ To prevent the above error, make sure your `Cargo.toml` is up to date ([see the 
 ## Repository management and submission
 
 1. We suggest you to continue to work on your repo of midterm project. 
-2. Submit a report in pdf on Canvas. Please don't submit code. One submission for one team is enough.
+2. Submit a report in pdf on Canvas. Please don't submit code.
 
 ## Code provided
 The following files are related to this assignment.
@@ -53,17 +53,47 @@ Hence, in this part, you only need to add blockchain into miner **Context** stru
 2. Add `Arc<Mutex<Blockchain>>` to the definition of miner **Context** struct.
 3. Add `blockchain: &Arc<Mutex<Blockchain>>` to the argument of *new()* function. Inside *new()* function, use `Arc::clone(blockchain)` to get a clone and pass it to **Context**.
 
-At last, you need to go to *src/main.rs*, and change the code related to `miner::new`. You need to first create a new **Blockchain**, then turn it into `Arc<Mutex<Blockchain>>`, then pass it into function `miner::new`.
+The completed **Context** struct should look like the following:
+
+```rust
+use std::sync::{Arc, Mutex};
+...
+pub struct Context {
+    /// Channel for receiving control signal
+    control_chan: Receiver<ControlSignal>,
+    operating_state: OperatingState,
+    server: ServerHandle,
+    blockchain: Arc<Mutex<Blockchain>>,
+    // mempool: Arc<Mutex<Mempool>>,  // not yet required
+}
+```
+
+The function `miner::new` should have the following signature:
+```rust
+pub fn new(server: &ServerHandle, blockchain: &Arc<Mutex<Blockchain>>) -> (Context, Handle)
+```
+
+At last, you need to go to *src/main.rs*, and change the code related to `miner::new`. You need to first create a new **Blockchain**, then turn it into `Arc<Mutex<Blockchain>>` (e.g., `let blockchain = Arc::new(Mutex::new(Blockchain::new()));`), then pass it into function `miner::new`.
 
 
 ### Main mining loop
 
 The main mining loop is the loop that is trying random nonces to solve the proof-of-work puzzle. We have provided the loop with some API code. The actual mining may start from line 114, in which we have "TODO: actual mining" comment.
 
-To build a block, you need to gather a block's fields. In a block header, the fields are gathered as follows,
+Before accessing the blockchain struct, we need to firstly grab its lock:
+```rust
+let mut blockchain = self.blockchain.lock().unwrap();
+```
+The lock will be _automatically released_ when the corresponding variable's lifetime ends. In case you want to release the lock explicitly:
+```rust
+drop(blockchain);  // Although unnecessary, you can release the lock explicitly like this
+```
+
+Next, to build a block, you need to gather a block's fields. In a block header, the fields are gathered as follows,
 1. parent - use *blockchain.tip()*
-2. timestamp - use `std::time`, you can refer [this document](https://doc.rust-lang.org/std/time/constant.UNIX_EPOCH.html). We suggest to use millisecond as the unit rather than second, since when we measure block delay in the future, second may be too coarse.
-3. difficulty - it should be computed from parent and ancestor blocks with some adaptive rule. In this project, we use the simple rule: a static/constant difficulty. This rule just means the difficulty of this block should be the same with that of parent block. You should be able to get parent block's difficulty from blockchain.
+2. timestamp - use `SystemTime::now().duration_since(UNIX_EPOCH).unwrap().as_millis()` from `std::time`. This expression is pretty self-explanatory, except `UNIX_EPOCH` refers to 1970-01-01 00:00:00 UTC, and `millis` is short for _milliseconds_.
+You can refer [this document](https://doc.rust-lang.org/std/time/constant.UNIX_EPOCH.html) for more information.
+3. difficulty - in real life, it is computed from parent and ancestor blocks with some adaptive rule. In this project, we use the simple rule: a static/constant difficulty. This rule just means the difficulty of this block should be the same with that of parent block. You should be able to get parent block's difficulty from blockchain.
 4. merkle root - compute it by creating a merkle tree from the content.
 5. nonce - generate a random nonce (use *rand* crate) in every iteration, or increment nonce (say, increment by 1) in every iteration. P.S. do you think there is any difference in terms of the probability of solving the puzzle?
 
@@ -91,6 +121,7 @@ and call API via browser or curl command:
 ```
 http://127.0.0.1:7000/miner/start?lambda=0
 ```
+(Setting `lambda=0` makes the miner run at full speed; you may use other values for `lambda` if appropriate.)
 
 After some time, stop miner (or the program), count the number of blocks and calculate the mining rate (block per second). Please run experiments such that the mining rate is not too large or too low. 0.01 to 1000 blocks per second is a reasonable range. (If too low, you have to wait for too long. If too high, you may run out of memory.)
 
@@ -99,8 +130,6 @@ You also need to write the function to get the number of blocks if you don't hav
 ## Report
 
 Please submit a report in pdf. Please use double spacing between paragraphs and use 11 pt font size. Also please keep it within one page.
-
-Firstly, the report should have both teammate's name and netid. Then you need to write the following paragraphs.
 
 In the first paragraph, please state clearly your experiment settings. It should include the difficulty, the lambda parameter, and the duration of your experiment.
 
