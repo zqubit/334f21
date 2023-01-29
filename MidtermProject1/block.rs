@@ -5,7 +5,7 @@
 
 use serde::{Serialize, Deserialize};
 use crate::crypto::hash::{H256, Hashable};
-use crate::transaction::Transaction as Transaction;
+use crate::transaction::Transaction;
 
 /// The block header
 #[derive(Serialize, Deserialize, Debug, Clone)]
