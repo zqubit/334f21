@@ -3,7 +3,7 @@
 //! You need to implement the `Blockchain` struct and its methods.
 
 use crate::block::Block;
-use crate::crypto::hash::H256;
+use crate::crypto::hash::{H256, Hashable};
 use std::collections::HashMap;
 
 pub struct Blockchain {
