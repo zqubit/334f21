@@ -57,6 +57,7 @@ The completed **Context** struct should look like the following:
 
 ```rust
 use std::sync::{Arc, Mutex};
+use crate::blockchain::Blockchain;
 ...
 pub struct Context {
     /// Channel for receiving control signal
@@ -65,6 +66,7 @@ pub struct Context {
     server: ServerHandle,
     blockchain: Arc<Mutex<Blockchain>>,
     // mempool: Arc<Mutex<Mempool>>,  // not yet required
+    // (Optional: you may define other state variables here)
 }
 ```
 
