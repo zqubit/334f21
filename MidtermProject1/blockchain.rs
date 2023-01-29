@@ -31,7 +31,7 @@ impl Blockchain {
         unimplemented!()
     }
 
-    /// Get the last block's hash of the longest chain
+    /// Get all the blocks' hashes along the longest chain
     #[cfg(any(test, test_utilities))]
     pub fn all_blocks_in_longest_chain(&self) -> Vec<H256> {
         unimplemented!()
@@ -43,7 +43,6 @@ impl Blockchain {
 mod tests {
     use super::*;
     use crate::block::test::generate_random_block;
-    use crate::crypto::hash::Hashable;
 
     #[test]
     fn insert_one() {
