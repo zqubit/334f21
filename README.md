@@ -23,7 +23,6 @@ You need to run the project on your machines. **We strongly recommend Linux or M
 
 ## Midterm Project
 
-- You may form a team of 2 with another student in this class for this project.  You do not have to form a team.  If you do at some point, you must work as a team through the end of Part 6.
 - [Part 1](MidtermProject1).
 - [Part 2](MidtermProject2).
 - [Part 3](MidtermProject3).
