@@ -86,9 +86,9 @@ Before accessing the blockchain struct, we need to firstly grab its lock:
 ```rust
 let mut blockchain = self.blockchain.lock().unwrap();
 ```
-The lock will be _automatically released_ when the corresponding variable's lifetime ends. In case you want to release the lock explicitly:
+The lock will be _automatically released_ when the corresponding variable's lifetime ends. If you are not sure when the lifetime ends or want explicit control in when to release the lock, you can do the following:
 ```rust
-drop(blockchain);  // Although unnecessary, you can release the lock explicitly like this
+drop(blockchain);  // Release the lock explicitly like this
 ```
 
 Next, to build a block, you need to gather a block's fields. In a block header, the fields are gathered as follows,
