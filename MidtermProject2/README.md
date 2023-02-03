@@ -139,8 +139,6 @@ The second paragraph is a table of difficulty vs mining rate. There should be at
 
 The third paragraph should give a 1-2 sentence analysis of the results in the table. Especially if you encounter any unexpected result please point it out.
 
-In the last paragraph, please use one sentence to describe how you divide your work.
-
 ## Advance notice
 1. Miner also needs memory pool (and UTXO state perhaps). We will cover them in the future.
 2. We will cover network module in the next part. In that part, the miner just needs to follow the protocol when a block is mined. E.g., broadcast the block's hash.
