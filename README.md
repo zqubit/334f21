@@ -27,8 +27,6 @@ You need to run the project on your machines. **We strongly recommend Linux or M
 - [Part 2](MidtermProject2).
 - [Part 3](MidtermProject3).
 - [Part 4](MidtermProject4).
-- [Part 5](MidtermProject5).
-- [Part 6](MidtermProject6).
 
 ## Policy
 Submissions later than due date will get 0 points.
