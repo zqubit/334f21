@@ -1,6 +1,6 @@
 # Midterm Project, Part 4
 
-This part of the Midterm project will deal with transactions and the ledger state. You need to integrate the transaction structure inside the block content, add network functionality to transaction propagation, and add a transaction mempool to be used by the miner to include transaction content in the block being mined. You also need to maintain a state for the ledger that the blockchain creates and add all the necessary checks related to it.
+This part of the project will deal with transactions and the ledger state. You need to integrate the transaction structure inside the block content, add network functionality to transaction propagation, and add a transaction mempool to be used by the miner to include transaction content in the block being mined. You also need to maintain a state for the ledger that the blockchain creates and add all the necessary checks related to it.
 
 This is the last part of midterm project, and you are going to finish the Bitcoin client.
 
