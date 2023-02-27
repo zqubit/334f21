@@ -167,3 +167,18 @@ The design document is a short description of your codebase and the various desi
 ### Demo
 
 You need to submit a two-minute video that demonstrates the execution of your code. (For example, if you use a Mac, you can use QuickTime Player to make a video recording of your computer screen.) For the demo you need to run your code on 3 nodes on the same computer and display the status at each node. Run the experiments at a suitable mining rate and a suitable transaction generation rate so that the video demonstrates the growth of the blockchains at the three nodes. Your video should be at a reasonable pace for the graders to follow without using slow motion. At the same time your video should provide enough information for the grader to judge what requirements you have completed.
+
+To get a full credit, it is sufficient to show **any 4 of the following 5** bulleted items:
+1. Initializing all three nodes and setting them in motion; showing communications between them;
+2. periodical traces of a working miner and mempool on each node (which should be succinct and not overwhelm the screen, e.g., printing a one-line trace when a new block is mined/received, or some selected transactions are received);
+3. the growth of the blockchain on each node, and that all nodes agree to each other (e.g., showing the hash and height of the tip, and the total count of the blocks);
+4. the evolution of the ledger state on each node, and that all nodes agree to each other (e.g., showing the balances of certain accounts if your implementation is account based);
+5. occasional invalid transactions are properly rejected and do not crash the program (i.e. the generators should take a small chance to generate invalid transactions).
+
+If your bitcoin client is not fully completed, you can still get partial credits by showing how the individual parts work, for example:
+
+6. traces of the generator generating random UTXO or account-based transactions, signing them, adding them to the mempool, and broadcasting their hashes;
+7. traces of the network exchanging messages;
+8. traces of all sorts of validations when receiving a new block/transaction;
+9. traces of one process working alone (instead of three processes working in harmony);
+and so on.
